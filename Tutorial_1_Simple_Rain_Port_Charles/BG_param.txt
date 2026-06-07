@@ -1,0 +1,70 @@
+```
+################
+## BG_Flood simple rain model 
+#################
+
+# Port Charles stress test 
+
+##########
+# DEM
+##########
+
+dem = PortCharles_DEM.nc?z
+aoi = aoi.csv
+
+##########
+# Domain
+##########
+
+dx = 32.0;
+
+##########
+# Grid refinement
+##########
+
+initlevel=0;
+minlevel=0;
+maxlevel=2;
+Adaptation = Targetlevel,refinement_map.nc ;
+
+##########
+# Forcing
+##########
+
+rain = rain.txt
+
+##########
+# Roughness
+##########
+
+frictionmodel = 1
+roughness = 0.04
+
+################
+# Boundaries   #
+################
+
+left = 0;
+right = tide.txt,3;
+top = tide.txt,3;
+bot = 0;
+
+##########
+# Solver parameters
+##########
+
+engine = 2
+vmax=16.0
+
+##########
+# output parameters
+##########
+
+endtime = 4800.0
+outputtimestep = 300.00;
+
+outvars = h, zs, u, v, hmax, zsmax, Umax, hUmax;
+
+#outfile = Port_Charles_dx32m.nc
+outfile = Port_Charles_dx32mTo8m_Kurganov.nc
+#outfile = Port_Charles_dx8m.nc
