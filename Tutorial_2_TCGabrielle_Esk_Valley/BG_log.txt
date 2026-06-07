@@ -1,0 +1,91 @@
+#################################
+BG_Flood v1.0
+#################################
+#################################
+#
+model started at 08-06-2026 00:01:50
+
+Reading parameter file: BG_param.txt ...
+
+Reading bathymetry grid data...
+Reading forcing metadata. file: 00_input_files/dem_Esk_Valley.nc extension: nc
+Forcing grid info: nx=1024 ny=816 dx=8.000000 dy=8.000000 grdalpha=0.000000 xo=1927824.000000 xmax=1936008.000000 yo=5629096.000000 ymax=5635616.000000
+Reading forcing metadata. file: 00_input_files/dem_Esk_Valley_mouth_1m.nc extension: nc
+Forcing grid info: nx=3352 ny=2796 dx=1.000000 dy=1.000000 grdalpha=0.000000 xo=1932184.500000 xmax=1935535.500000 yo=5630987.500000 ymax=5633782.500000
+Reading CRS information from forcing metadata (file: 00_input_files/dem_Esk_Valley_mouth_1m.nc)
+
+Reading boundary data...
+
+Read Roughness map (cf) data...
+Reading forcing metadata. file: 00_input_files/Roughness_Esk_Valley.nc extension: nc
+Forcing grid info: nx=1024 ny=816 dx=8.000000 dy=8.000000 grdalpha=0.000000 xo=1927824.000000 xmax=1936008.000000 yo=5629096.000000 ymax=5635616.000000
+
+Preparing rivers (6 rivers)
+
+Preparing Rain forcing
+Forcing map was specified. Checking file... 
+Reading Forcing file as netcdf file
+
+Read AOI polygon
+ Polygon is ClockWise
+ Reversing Polygon handedness
+
+Adjusted model domain (xo/xmax/yo/ymax): 
+	1927820.000000/1936012.000000/5629090.000000/5635746.000000
+	 Initial resolution (level 0) = 32.000000
+Reference time: 2000-01-01T00:00:00
+Model Initial time: 68400.000000 ; 
+Model end time: 216000.000000
+There are 1 GPU devices on this machine
+Using Device: NVIDIA GeForce RTX 5070 Laptop GPU
+
+Initializing mesh
+	Initial number of blocks: 166; Will be allocating 175 in memory.
+
+Initial condition:
+	Warm start
+	Initializing rivers
+
+Boundary Segment 0 :  has 5 blocks 
+
+Boundary Segment 1 : 00_input_files/tide.txt has 11 blocks 
+
+Boundary Segment 2 :  has 8 blocks 
+
+Boundary Segment 3 :  has 6 blocks 
+
+Boundary Segment 4 :  has 18 blocks 
+Setting up GPU
+
+Model setup complete
+#################################
+Initialising model main loop
+Create netCDF output file...
+Warning! Output file name already exist   
+New file name: Esk_Valley_1.nc
+Output to map: Esk_Valley_1.nc, Totaltime = 68400.000000 s; Mean dt = 0.000000e+00 s
+		Completed
+Model Running...
+Output to map: Esk_Valley_1.nc, Totaltime = 72000.000000 s; Mean dt = 1.640091e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 75600.000000 s; Mean dt = 1.623084e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 79200.000000 s; Mean dt = 1.597870e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 82800.000000 s; Mean dt = 1.573427e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 86400.000000 s; Mean dt = 1.554404e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 90000.000000 s; Mean dt = 1.545728e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 93600.000000 s; Mean dt = 1.546392e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 97200.000000 s; Mean dt = 1.555748e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 100800.000000 s; Mean dt = 1.574115e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 104400.000000 s; Mean dt = 1.598579e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 108000.000000 s; Mean dt = 1.620891e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 111600.000000 s; Mean dt = 1.637108e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 115200.000000 s; Mean dt = 1.640091e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 118800.000000 s; Mean dt = 1.629697e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 122400.000000 s; Mean dt = 1.603563e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 126000.000000 s; Mean dt = 1.565217e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 129600.000000 s; Mean dt = 1.521555e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 133200.000000 s; Mean dt = 1.417881e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 136800.000000 s; Mean dt = 1.300578e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 140400.000000 s; Mean dt = 1.287554e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 144000.000000 s; Mean dt = 1.257422e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 147600.000000 s; Mean dt = 1.201201e+00 s
+Output to map: Esk_Valley_1.nc, Totaltime = 151200.000000 s; Mean dt = 1.112828e+00 s

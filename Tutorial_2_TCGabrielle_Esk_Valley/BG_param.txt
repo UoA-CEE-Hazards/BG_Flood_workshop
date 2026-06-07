@@ -1,0 +1,80 @@
+##########
+# DEM    #
+##########
+
+dem = 00_input_files/dem_Esk_Valley.nc?z
+dem = 00_input_files/dem_Esk_Valley_mouth_1m.nc?Band1
+
+xmin = 1927820.0
+xmax = 1936000.0
+ymin = 5629090.0
+ymax = 5635610.0
+
+dx = 32.000000
+
+aoi = 00_input_files/aoi_Esk_Waipunga.txt
+
+##############
+# Forcing    #
+##############
+
+cfmap = 00_input_files/Roughness_Esk_Valley.nc?zo
+frictionmodel = 1
+
+rainfile = 00_input_files/rainfall_TCGabrielle_Aropaoanui.nc?depth
+
+##########
+# Rivers #
+##########
+
+river = 00_input_files/river_inlet_small_domain/rid_8192999_BG.txt,1932871.400000,1932881.400000,5634698.450000,5634708.450000
+river = 00_input_files/river_inlet_small_domain/rid_8193181_BG.txt,1930401.870000,1930411.870000,5633469.130000,5633479.130000
+#river = 00_input_files/river_inlet_small_domain/rid_8193404_BG.txt,1928511.080000,1928521.080000,5633660.570000,5633670.570000
+river = 00_input_files/river_inlet_small_domain/rid_8193404_135perc_BG.txt,1928511.080000,1928521.080000,5633660.570000,5633670.570000
+river = 00_input_files/river_inlet_small_domain/rid_8193495_BG.txt,1928511.080000,1928521.080000,5633660.570000,5633670.570000
+river = 00_input_files/river_inlet_small_domain/rid_8193295_BG.txt,1930497.480000,1930507.480000,5633687.520000,5633697.520000
+river = 00_input_files/river_inlet_small_domain/rid_8193648_BG.txt,1930497.480000,1930507.480000,5633687.520000,5633697.520000
+
+
+###############
+# Adaptation  #
+###############
+
+initlevel = 0
+#Adaptation = Targetlevel,00_input_files/Target_refine2.nc
+#minlevel = 0
+#maxlevel = 5
+
+################
+# Boundaries   #
+################
+
+left = 0;
+right = 00_input_files/tide.txt,2; #0;
+top = 0;
+bot = 0;
+
+#############
+# Timing    #
+#############
+
+inittime = 68400.000;
+outputtimestep = 3600.000000
+endtime = 216000.000000
+
+#############
+# Others    #
+#############
+
+gpudevice = 0
+
+#############
+# Output    #
+#############
+
+smallnc = 0
+
+outvars = zs, u, v, h, hmax, zsmax, Umax, hUmax Uh;
+
+outfile = Esk_Valley.nc
+
